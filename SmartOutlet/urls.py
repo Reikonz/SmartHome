@@ -20,5 +20,6 @@ app_name = 'SmartOutlet'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('lights/', views.lights, name='lights'),
+    path('outlets/', views.outlets, name='outlets'),
+    path('outlets/toggle_outlet/', views.toggle_outlet, name='toggle_outlet'),
 ]

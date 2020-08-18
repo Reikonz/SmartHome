@@ -1,15 +1,15 @@
 {% extends 'SmartOutlet/base.html' %}
 {% block content %}
+{% load static %}
 
 <div class="jumbotron text-center">
   <h1>The Dang Household</h1>  
 </div>
-  
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h3>Lights</h3>
-      <button type="button" class="btn btn-primary">Hallway</button>
+      <button onclick="toggle_outlet()" type="button" class="btn btn-primary">Hallway</button>
       <button type="button" class="btn btn-primary">Living</button>
       <button type="button" class="btn btn-primary">Master Bed</button>
       <button type="button" class="btn btn-primary">Office</button>
